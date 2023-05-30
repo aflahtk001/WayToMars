@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WayToMars-Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/photos/icon.jpg" >
+    
+    <!-- Load Require CSS -->
+    <script src="https://kit.fontawesome.com/148c7b40b1.js" crossorigin="anonymous"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body>
+    <div class="bg-light">
+        <div class="pt-5 container">
+
+            <h1 class="h2 semi-bold-600 text-center mt-2 typo-space-line-center mb-5">Contact Us</h1>
+            <p class="text-center pb-5 light-300 ">"Let's address your concerns and find a solution!"
+            </p>
+          
+           </div>
+         
+           <section class="container">
+    
+           
+            <div class="row pb-4 container-fluid d-flex justify-content-center mx-auto">
+                
+                <div class="col-lg-8 ">
+                    <form class="contact-form row"  id="submit-form" action=" " role="form">
+    
+                        <div class="col-lg-6 mb-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control form-control-lg light-300 bg-light" name="name" id=" fname" placeholder="Name">
+                                <label for="fname light-300">Name</label>
+                            </div>
+                        </div><!-- End Input Name -->
+    
+                        <div class="col-lg-6 mb-4">
+                            <div class="form-floating">
+                                <input type="email" class="form-control form-control-lg light-300 bg-light" name="email" id="lname" placeholder="Email">
+                                <label for="lname light-300">Email</label>
+                            </div>
+                        </div><!-- End Input Email -->
+    
+                         
+    
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <textarea type=" text" class="form-control light-300 bg-light" rows="8" placeholder="Message" name="Message" id="subject" style="height: 10rem;"></textarea>
+                                <label for="subject light-300">Message</label>
+                            </div>
+                        </div><!-- End Textarea Message -->
+    
+                        <div class="col-md-12 col-12 m-auto text-center">
+                            <button type="submit" value="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300 mt-5 mb-5">Send Message</button>
+                        </div>
+    
+                    </form>
+                </div>
+                <!-- End Contact Form -->
+    
+    
+            </div>
+        </section>
+    </div>
+    <!-- End Contact -->
+
+
+    <footer class="bg-secondary ">
+        <div class="w-100 bg-primary pb-2">
+            <div class="container">
+
+                <div class="social-icons  ">
+                            
+                    <a href="https://twitter.com/AFLAHTK3?t=J7hQ0bAoyXbI6ez75BokzQ&s=09" target="_blank" title="twitter"> 
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://instagram.com/aflahtk._?igshid=MzRlODBiNWFlZA==" target="_blank" title="instagram">  
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://github.com/aflahtk001" target="_blank" title="github">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/aflah-tk-86a390246" target="_blank" title="linkedin">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                      </a>
+                     
+                  </div>     
+                        <p class="text-lg-start text-center text-light light-300 d-flex justify-content-center">
+                            © Copyright 2023 AFLAH TK
+                        </p>  
+            </div>
+         </footer>
+    
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+
+         $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwH10hwHxQJHm95zz2SVGZlS1o23Uyc2yhRzAu6Qg9x0YNk7lUXk9DDqFOziBTN0giO/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+    
+</body>
+
+</html>

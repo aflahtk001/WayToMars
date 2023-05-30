@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>WayToMars-Photos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/photos/icon.jpg" >
+  
+  <!-- Load Require CSS -->
+  <script src="https://kit.fontawesome.com/148c7b40b1.js" crossorigin="anonymous"></script>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font CSS -->
+  <link href="assets/css/boxicon.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Load Tempalte CSS -->
+  <link rel="stylesheet" href="assets/css/templatemo.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<body>
+
+
+  
+ 
+
+<div class="bg-light">
+  <div class="pt-5">
+
+    <h1 class="h2 semi-bold-600 text-center mt-2 typo-space-line-center mb-5">Photos</h1>
+    <p class="text-center pb-5 light-300">  Captivating visuals and extraordinary journey!
+    </p>
+  
+   </div>
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-4 col-md-12 mb-4  ">
+        <img
+          src="assets/photos/ph-1.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+    
+        <img
+          src="assets/photos/ph-2.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+
+        <img
+        src="assets/photos/ph-3.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+    
+        <img
+        src="assets/photos/ph-4.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+
+        
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+        src="assets/photos/ph-5.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds"
+        />
+    
+        <img
+        src="assets/photos/ph-6.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+
+        <img
+        src="assets/photos/ph-7.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+    
+        <img
+        src="assets/photos/ph-8.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+        src="assets/photos/ph-9.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Waves at Sea"
+        />
+    
+        <img
+        src="assets/photos/ph-10.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Yosemite National Park"
+        />
+
+        <img
+        src="assets/photos/ph-1.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+    
+        <img
+        src="assets/photos/ph-12.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+
+<footer class="bg-secondary ">
+  <div class="w-100 bg-primary pb-2">
+      <div class="container">
+
+          <div class="social-icons  ">
+                      
+            <a href="https://twitter.com/AFLAHTK3?t=J7hQ0bAoyXbI6ez75BokzQ&s=09" target="_blank" title="twitter"> 
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/aflahtk._?igshid=MzRlODBiNWFlZA==" target="_blank" title="instagram">  
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/aflahtk001" target="_blank" title="github">
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aflah-tk-86a390246" target="_blank" title="linkedin">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+               
+            </div>     
+                  <p class="text-lg-start text-center text-light light-300 d-flex justify-content-center">
+                      © Copyright 2023 AFLAH TK
+                  </p>  
+      </div>
+   </footer>
+
+
+
+   <!-- Bootstrap -->
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <!-- Load jQuery require for isotope -->
+   <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+   <script src="assets/js/isotope.pkgd.js"></script>
+   <!-- Page Script -->
+   <script>
+       $(window).load(function() {
+           // init Isotope
+           var $projects = $('.projects').isotope({
+               itemSelector: '.project',
+               layoutMode: 'fitRows'
+           });
+           $(".filter-btn").click(function() {
+               var data_filter = $(this).attr("data-filter");
+               $projects.isotope({
+                   filter: data_filter
+               });
+               $(".filter-btn").removeClass("active");
+               $(".filter-btn").removeClass("shadow");
+               $(this).addClass("active");
+               $(this).addClass("shadow");
+               return false;
+           });
+       });
+
+       
+   </script>
+   <!-- Templatemo -->
+   <script src="assets/js/templatemo.js"></script>
+   <!-- Custom -->
+   <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
